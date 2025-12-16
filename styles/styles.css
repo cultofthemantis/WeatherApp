@@ -1,0 +1,6 @@
+.weather-container{
+    border-width: 5px;
+    border-color: black;
+    background-color: aqua;
+    max-width: 80%;
+}
