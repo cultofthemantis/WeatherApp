@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Document</title>
-</head>
-<body>
-    
-<div id="app">
-
-
+  </head>
+  <body>
     <div id="search-bar">
       <div id="search-input"></div>
       <div id="search-button"></div>
     </div>
 
     <div id="content">
-
-
       <div id="main-card">
-
         <div id="location-temp">
           <div id="city"></div>
           <div id="current-temp"></div>
@@ -41,17 +34,20 @@
             <div id="rain-chance"></div>
           </div>
 
+          <div class="wind">
+            <div class="wind-speed" id="wind-speed"></div>
+          </div>
+
+
+
           <div class="detail">
             <div id="low-label"></div>
             <div id="low-temp"></div>
           </div>
         </div>
-
       </div>
 
- 
       <div id="forecast-card">
-
         <div id="forecast-title"></div>
 
         <div class="forecast-day">
@@ -102,13 +98,9 @@
           <div id="day-7-desc"></div>
           <div id="day-7-temp"></div>
         </div>
-
       </div>
-
     </div>
 
-  </div>
-
     <script type="module" src="/scripts/app.js"></script>
-</body>
+  </body>
 </html>

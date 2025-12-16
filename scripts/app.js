@@ -2,7 +2,9 @@ const city = document.getElementById("city");
 const currentTemp = document.getElementById("current-temp");
 const weatherIcon = document.getElementById("weather-icon");
 const todayTitle = document.getElementById("today-title");
-
+const highTemp = document.getElementById("high-temp");
+const lowTemp = document.getElementById("low-temp");
+const windSpeed = document.getElementById("wind-speed");
 function getData() {
   navigator.geolocation.getCurrentPosition(async (position) => {
     const lat = position.coords.latitude;
@@ -13,11 +15,21 @@ function getData() {
     const response = await fetch(url);
     const data = await response.json();
     
-    console.log(data);
+    console.log(data.name);
+    console.log(data.main.temp);
+    console.log(data.main.temp_min);
+    console.log(data.main.temp_max);
+    console.log(data.main.feels_like);
+    console.log(data.wind.speed);
+
+    
     
     
     currentTemp.textContent = `${data.main.temp}`;
     city.textContent = `${data.name}`;
+    highTemp.textContent = `${data.main.temp_max}`;
+    lowTemp.textContent = `${data.main.temp_min}`;
+    windSpeed.textContent = `${data.wind.speed}`;
     return data;
   });
 }
