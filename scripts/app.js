@@ -1,3 +1,4 @@
+
 const city = document.getElementById("city");
 const currentTemp = document.getElementById("current-temp");
 const weatherIcon = document.getElementById("weather-icon");
