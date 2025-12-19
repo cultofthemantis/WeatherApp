@@ -84,6 +84,17 @@ border-radius: 0 10% 10% 0;
   font-weight: 500;
 }
 
+
+.weather-icon img{
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+}
+.weather-icon{
+
+  margin-right: 15rem;  
+}
+
 .current-temp {
   font-size: 40px;
   font-weight: 600;

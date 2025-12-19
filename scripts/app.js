@@ -67,6 +67,11 @@ function getLocalData() {
     if (isNaN(data.main.rain)) {
       rainChance.textContent = "0%";
     }
+
+
+    if (data.weather[0].description.includes("clouds") || data.weather[0].description.includes("scattered clouds")){
+      weatherIcon.innerHTML = `<img src="assets/Cloudy (1).png" alt="Cloudy">`;
+    }
     return data;
   });
 }
@@ -149,23 +154,23 @@ function getForecastData() {
 
 
     //scattered clouds icons
-    if ((days[0].weather[0].description.includes("scattered clouds")  || days[0].weather[0].description.includes("broken clouds"))) {
+    if ((days[0].weather[0].description.includes("clouds")  || days[0].weather[0].description.includes("broken clouds"))) {
       day1Icon.innerHTML = `<img src="assets/Cloudy (1).png" alt="Cloudy">`
       day1Desc.textContent = "Clouds"
     }
-    if ((days[1].weather[0].description.includes("scattered clouds") || days[0].weather[0].description.includes("broken clouds"))) {
+    if ((days[1].weather[0].description.includes("clouds") || days[0].weather[0].description.includes("broken clouds"))) {
       day2Icon.innerHTML = `<img src="assets/Cloudy (1).png" alt="Cloudy">`
       day2Desc.textContent = "Clouds"
     }
-    if ((days[2].weather[0].description.includes("scattered clouds") || days[0].weather[0].description.includes("broken clouds"))) {
+    if ((days[2].weather[0].description.includes("clouds") || days[0].weather[0].description.includes("broken clouds"))) {
       day3Icon.innerHTML = `<img src="assets/Cloudy (1).png" alt="Cloudy">`
       day3Desc.textContent = "Clouds"
     }
-    if ((days[3].weather[0].description.includes("scattered clouds") || days[0].weather[0].description.includes("broken clouds"))) {
+    if ((days[3].weather[0].description.includes("clouds") || days[0].weather[0].description.includes("broken clouds"))) {
       day4Icon.innerHTML = `<img src="assets/Cloudy (1).png" alt="Cloudy">`
       day4Desc.textContent = "Clouds"
     }
-    if ((days[4].weather[0].description.includes("scattered clouds") || days[0].weather[0].description.includes("broken clouds"))) {
+    if ((days[4].weather[0].description.includes("clouds") || days[0].weather[0].description.includes("broken clouds"))) {
       day5Icon.innerHTML = `<img src="assets/Cloudy (1).png" alt="Cloudy">`
       day5Desc.textContent = "Clouds"
     }
