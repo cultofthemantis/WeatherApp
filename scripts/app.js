@@ -10,7 +10,7 @@ function getData() {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=8661d7c45684fcb7eb85cafb35ec6eaf`;
+    const url = `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=8661d7c45684fcb7eb85cafb35ec6eaf`;
 
     const response = await fetch(url);
     const data = await response.json();
@@ -25,8 +25,8 @@ function getData() {
     
     
     
-    currentTemp.textContent = `${data.main.temp}`;
-    city.textContent = `${data.name}`;
+    currentTemp.textContent = `${data.list.main.temp}`;
+    city.textContent = `${data.list.name}`;
     highTemp.textContent = `${data.main.temp_max}`;
     lowTemp.textContent = `${data.main.temp_min}`;
     windSpeed.textContent = `${data.wind.speed}`;

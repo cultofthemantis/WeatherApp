@@ -4,3 +4,158 @@
     background-color: aqua;
     max-width: 80%;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url("/images/background.jpg") center / cover no-repeat fixed;
+  color: white;
+  padding: 30px;
+}
+
+
+.search-bar {
+  display: flex;
+  max-width: 620px;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  flex: 1;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px 0 0 12px;
+}
+
+.search-button {
+  width: 150px;
+  height: 56px;
+  background: #2736ff;
+  border-radius: 0 12px 12px 0;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.main-card,
+.forecast-card {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 22px;
+  padding: 32px;
+  backdrop-filter: blur(12px);
+}
+
+
+.main-card {
+  flex: 2;
+  position: relative;
+}
+
+
+.location-temp {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.city {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.current-temp {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+
+.weather-icon {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  width: 120px;
+  height: 120px;
+}
+
+
+.today-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 50px 0 45px;
+}
+
+
+.details-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+}
+
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.high-label,
+.rain-label,
+.low-label {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.high-temp,
+.rain-chance,
+.low-temp {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+
+.wind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wind-speed {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+
+
+.forecast-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast-title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.forecast-day {
+  display: grid;
+  grid-template-columns: 1fr 40px 2fr 1fr;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+}
+
