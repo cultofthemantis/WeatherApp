@@ -8,9 +8,12 @@
   </head>
   <body>
 
-    <div id="search-bar" class="search-bar">
-      <input id="search-input" class="search-input"></div>
-      <input id="search-button" class="search-button"></div>
+    <div class="row d-flex ">
+      <div id="search-bar" class="search-bar d-flex">
+        <input id="search-input" class="search-input"></input>
+        <button id="search-button" class="search-button"></button>
+      </div>
+
     </div>
 
     <div id="content" class="content">
@@ -21,29 +24,33 @@
           <div id="city" class="city"></div>
           <div id="current-temp" class="current-temp"></div>
         </div>
-
+        
         <div id="weather-icon" class="weather-icon"></div>
+        
+        <div class="minmax">
+          <h1>
+            Today's Min/Max Temperatures
+  
+          </h1>
 
+        </div>
         <div id="today-title" class="today-title"></div>
 
         <div id="details-row" class="details-row">
 
           <div class="detail">
-            <div id="high-label" class="high-label"></div>
+            <div id="high-label" class="high-label">High</div>
             <div id="high-temp" class="high-temp"></div>
           </div>
 
           <div class="detail">
-            <div id="rain-label" class="rain-label"></div>
+            <div id="rain-label" class="rain-label">Rain %</div>
             <div id="rain-chance" class="rain-chance"></div>
           </div>
 
-          <div class="wind">
-            <div id="wind-speed" class="wind-speed"></div>
-          </div>
 
           <div class="detail">
-            <div id="low-label" class="low-label"></div>
+            <div id="low-label" class="low-label">Low</div>
             <div id="low-temp" class="low-temp"></div>
           </div>
 
@@ -87,20 +94,6 @@
           <div id="day-5-icon" class="day-5-icon"></div>
           <div id="day-5-desc" class="day-5-desc"></div>
           <div id="day-5-temp" class="day-5-temp"></div>
-        </div>
-
-        <div class="forecast-day">
-          <div id="day-6-name" class="day-6-name"></div>
-          <div id="day-6-icon" class="day-6-icon"></div>
-          <div id="day-6-desc" class="day-6-desc"></div>
-          <div id="day-6-temp" class="day-6-temp"></div>
-        </div>
-
-        <div class="forecast-day">
-          <div id="day-7-name" class="day-7-name"></div>
-          <div id="day-7-icon" class="day-7-icon"></div>
-          <div id="day-7-desc" class="day-7-desc"></div>
-          <div id="day-7-temp" class="day-7-temp"></div>
         </div>
 
       </div>

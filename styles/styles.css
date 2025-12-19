@@ -5,16 +5,11 @@
     max-width: 80%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", system-ui, sans-serif;
-}
+
 
 body {
   min-height: 100vh;
-  background: url("/images/background.jpg") center / cover no-repeat fixed;
+
   color: white;
   padding: 30px;
 }
@@ -22,8 +17,9 @@ body {
 
 .search-bar {
   display: flex;
-  max-width: 620px;
-  margin-bottom: 30px;
+  max-width: 600px;
+  flex-direction: row;
+  margin-bottom: 3rem;
 }
 
 .search-input {
@@ -34,10 +30,10 @@ body {
 }
 
 .search-button {
-  width: 150px;
-  height: 56px;
+  width: 100px;
+border-radius: 0 10% 10% 0;
   background: #2736ff;
-  border-radius: 0 12px 12px 0;
+
 }
 
 .content {
@@ -54,6 +50,11 @@ body {
   backdrop-filter: blur(12px);
 }
 
+
+.minmax{
+  display: flex;
+  justify-content: center;
+}
 
 .main-card {
   flex: 2;
