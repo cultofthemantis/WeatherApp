@@ -9,7 +9,9 @@
 
 body {
   min-height: 100vh;
-
+  background-image: url(/assets/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
   color: white;
   padding: 30px;
 }
@@ -42,6 +44,8 @@ border-radius: 0 10% 10% 0;
   align-items: stretch;
 }
 
+/* CLEANNNN BLUR FOR THE BACKGROUND */
+
 .main-card,
 .forecast-card {
   background: rgba(0, 0, 0, 0.55);
@@ -55,6 +59,12 @@ border-radius: 0 10% 10% 0;
   display: flex;
   justify-content: center;
 }
+
+.dropdown {
+  position: absolute;
+  z-index: 999;
+}
+
 
 .main-card {
   flex: 2;
@@ -152,11 +162,92 @@ border-radius: 0 10% 10% 0;
 }
 
 .forecast-day {
+
   display: grid;
   grid-template-columns: 1fr 40px 2fr 1fr;
   align-items: center;
   padding: 14px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 15px;
+  font-size: 30px;
 }
 
+.search-wrapper {
+  position: relative; /* important for positioning the dropdown */
+  width: 650px; /* starting width of search bar */
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: white;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.search-button {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute; 
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none; 
+  border-radius: 0 0 6px 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.dropdown{
+  display:none;
+}
+
+.favorite-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.favorite-item:hover {
+  background-color: #f0f0f0;
+}
+
+.day-1-icon,
+.day-2-icon,
+.day-3-icon,
+.day-4-icon,
+.day-5-icon,
+img{
+  display: flex;
+  width: 50px;
+  justify-content: center;
+}
+
+.day-1-desc,
+.day-2-desc,
+.day-3-desc,
+.day-4-desc,
+.day-5-desc{
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+
+}

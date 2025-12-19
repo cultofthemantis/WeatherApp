@@ -7,37 +7,36 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="row d-flex">
+      <div class="search-wrapper" id="search-wrapper">
+        <div class="search-bar">
+          <input id="search-input" type="text" placeholder="Search" class="search-input"/>
+          <button id="search-button" class="search-button">Submit</button>
+        </div>
 
-    <div class="row d-flex ">
-      <div id="search-bar" class="search-bar d-flex">
-        <input id="search-input" class="search-input"></input>
-        <button id="search-button" class="search-button"></button>
+        <div id="favorites-dropdown" class="dropdown">
+          <div class="dropdown-header">Recent</div>
+          <ul id="favoritesList" class="favorites-list"></ul>
+          <button id="favorite-btn" class="favorite-btn">★</button>
+        </div>
       </div>
-
     </div>
 
     <div id="content" class="content">
-
       <div id="main-card" class="main-card">
-
         <div id="location-temp" class="location-temp">
           <div id="city" class="city"></div>
           <div id="current-temp" class="current-temp"></div>
         </div>
-        
-        <div id="weather-icon" class="weather-icon"></div>
-        
-        <div class="minmax">
-          <h1>
-            Today's Min/Max Temperatures
-  
-          </h1>
 
+        <div id="weather-icon" class="weather-icon"></div>
+
+        <div class="minmax">
+          <h1>Today's Min/Max Temperatures</h1>
         </div>
         <div id="today-title" class="today-title"></div>
 
         <div id="details-row" class="details-row">
-
           <div class="detail">
             <div id="high-label" class="high-label">High</div>
             <div id="high-temp" class="high-temp"></div>
@@ -48,18 +47,15 @@
             <div id="rain-chance" class="rain-chance"></div>
           </div>
 
-
           <div class="detail">
             <div id="low-label" class="low-label">Low</div>
             <div id="low-temp" class="low-temp"></div>
           </div>
-
         </div>
       </div>
 
       <div id="forecast-card" class="forecast-card">
-
-        <div id="forecast-title" class="forecast-title"></div>
+        <div id="forecast-title" class="forecast-title">5-Day Forecast</div>
 
         <div class="forecast-day">
           <div id="day-1-name" class="day-1-name"></div>
@@ -95,10 +91,10 @@
           <div id="day-5-desc" class="day-5-desc"></div>
           <div id="day-5-temp" class="day-5-temp"></div>
         </div>
-
       </div>
     </div>
 
     <script type="module" src="/scripts/app.js"></script>
+
   </body>
 </html>
