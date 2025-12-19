@@ -76,15 +76,16 @@ border-radius: 0 10% 10% 0;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  font-size: 24px;
 }
 
 .city {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 500;
 }
 
 .current-temp {
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1;
 }
@@ -101,7 +102,7 @@ border-radius: 0 10% 10% 0;
 
 .today-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 500;
   margin: 50px 0 45px;
 }
