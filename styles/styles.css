@@ -48,7 +48,7 @@ border-radius: 0 10% 10% 0;
 
 .main-card,
 .forecast-card {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.75);
   border-radius: 22px;
   padding: 32px;
   backdrop-filter: blur(12px);
@@ -77,22 +77,30 @@ border-radius: 0 10% 10% 0;
   flex-direction: column;
   gap: 6px;
   font-size: 24px;
+  margin-right: 40rem;
+  text-align: center;
+  justify-content: start;
+  align-content: left;
+  margin-top: 3rem;
 }
+
 
 .city {
   font-size: 40px;
   font-weight: 500;
+  align-items: start;
+  
 }
 
 
 .weather-icon img{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   justify-content: center;
 }
 .weather-icon{
-
-  margin-right: 15rem;  
+  margin-bottom: 2rem;
+  margin-right: 5rem;  
 }
 
 .current-temp {
@@ -225,21 +233,16 @@ border-radius: 0 10% 10% 0;
   max-height: 200px;
   overflow-y: auto;
   z-index: 10;
-}
-
-.dropdown{
-  display:none;
-}
-
-.favorite-item {
-  padding: 5px 10px;
-  cursor: pointer;
   color: black;
+  display: none;
 }
 
-.favorite-item:hover {
-  background-color: #f0f0f0;
-}
+/* .dropdown:hover{
+  display:block;
+  color: rgb(96, 96, 96);
+} */
+
+
 
 .day-1-icon,
 .day-2-icon,
@@ -250,6 +253,8 @@ img{
   display: flex;
   width: 50px;
   justify-content: center;
+
+
 }
 
 .day-1-desc,

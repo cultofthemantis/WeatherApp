@@ -1,4 +1,4 @@
-import { saveFavorites, renderFavorites, getFavorites } from "./localstorage.js";
+import { saveFavorites, renderFavorites, getFavorites, removeFavorite, loadCityWeather } from "./localstorage.js";
 const city = document.getElementById("city");
 const currentTemp = document.getElementById("current-temp");
 const weatherIcon = document.getElementById("weather-icon");
@@ -104,15 +104,15 @@ function getForecastData() {
     ];
 
     console.log(days);
-    const weekDays = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ];
+  const weekDays = [
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+  ];
 
     const day1 = new Date(days[0].dt_txt);
     const day2 = new Date(days[1].dt_txt);
@@ -179,23 +179,23 @@ function getForecastData() {
 
     //rain
         if ((days[0].weather[0].description.includes("rain"))) {
-      day1Icon.innerHTML = `<img src="assets/09d@2x.png" alt="rainy">`
+      day1Icon.innerHTML = `<img src="assets/raincloud.png" alt="rainy">`
       day1Desc.textContent = "Rain"
     }
         if ((days[1].weather[0].description.includes("rain"))) {
-      day2Icon.innerHTML = `<img src="assets/09d@2x.png" alt="rainy">`
+      day2Icon.innerHTML = `<img src="assets/raincloud.png" alt="rainy">`
       day2Desc.textContent = "Rain"
     }
         if ((days[2].weather[0].description.includes("rain"))) {
-      day3Icon.innerHTML = `<img src="assets/09d@2x.png" alt="rainy">`
+      day3Icon.innerHTML = `<img src="assets/raincloud.png" alt="rainy">`
       day3Desc.textContent = "Rain"
     }
         if ((days[3].weather[0].description.includes("rain"))) {
-      day4Icon.innerHTML = `<img src="assets/09d@2x.png" alt="rainy">`
+      day4Icon.innerHTML = `<img src="assets/raincloud.png" alt="rainy">`
       day4Desc.textContent = "Rain"
     }
         if ((days[4].weather[0].description.includes("rain"))) {
-      day5Icon.innerHTML = `<img src="assets/09d@2x.png" alt="rainy">`
+      day5Icon.innerHTML = `<img src="assets/raincloud.png" alt="rainy">`
       day5Desc.textContent = "Rain"
     }
    
@@ -276,13 +276,13 @@ searchBtn.addEventListener("click", async function () {
   ];
 
   const weekDays = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
   ];
 
   const day1 = new Date(days[0]);
@@ -345,6 +345,3 @@ favoriteBtn.addEventListener("click", () => {
 
 });
 
-// favoritesList.addEventListener("click", function(){
-
-// })
