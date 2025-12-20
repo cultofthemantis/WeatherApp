@@ -11,3 +11,7 @@ Readability: Darken the cards slightly so the white text pops against the clouds
 The "Stretch": Add a max-width to the container to stop side-to-side scrolling on big screens.
 Asset Links: Fix the broken image names in the assets folder so all icons appear.
 Search Bar: Slim down the padding to match the sleekness of the original mockup.
+
+
+Peer reviewer 2 : Joseph Duarte
+this looks great! its pretty accurate to the figma apart from a couple small suggestions like maybe having the star further, golden and bigger like the prototype. i really like the blur effect you have on the cards. i feel like it makes the text a lot easier to read. great job!
