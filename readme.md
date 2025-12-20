@@ -15,3 +15,11 @@ Search Bar: Slim down the padding to match the sleekness of the original mockup.
 
 Peer reviewer 2 : Joseph Duarte
 this looks great! its pretty accurate to the figma apart from a couple small suggestions like maybe having the star further, golden and bigger like the prototype. i really like the blur effect you have on the cards. i feel like it makes the text a lot easier to read. great job!
+
+// Kellen Dixon
+
+ // Date Revised: 12/19/25
+
+ // Weather Sprint
+
+ // Made a working weather app using the assigned figma
